@@ -66,3 +66,43 @@ const sumArray = (arr) => {
 }
 
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+
+// Prime Numbers
+
+// Step One
+
+const checkPrime = (num) => {
+	for (i = 2; i <= Math.sqrt(num); i++) {
+		if (num % i === 0) {
+			return false;
+		}
+	}
+	return true;
+}
+
+console.log(checkPrime(2));
+console.log(checkPrime(3));
+console.log(checkPrime(5));
+console.log(checkPrime(7));
+console.log(checkPrime(11));
+console.log(checkPrime(4));
+console.log(checkPrime(6));
+console.log(checkPrime(8));
+console.log(checkPrime(9));
+console.log(checkPrime(10));
+console.log(checkPrime(12));
+
+// Step Two
+
+const printPrimes = (limit) => {
+	for (x = 2; x <= limit; x++) {
+		if (checkPrime(x) === true) {
+			console.log(x);
+		}
+	}
+}
+
+printPrimes(5);
+
+// Is there a way to adjust the scope so that I could use i in my for loop on printPrimes? Right now, it gives an infinite loop.
