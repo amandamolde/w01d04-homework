@@ -17,3 +17,30 @@ const checkPalindrome = (string) => {
 console.log(checkPalindrome("Radar"));
 
 console.log(checkPalindrome("Borscht"));
+
+
+// Digit Sum
+
+// let num = 0;
+
+// const sumDigits = (num) => {
+// 	let stringNum = ""+num;
+// 	let digits = [];
+// 	console.log(stringNum);
+// // 	// for (let i = 0; i < stringNum.length; i += 1) {
+// // 	// 	digits.push(stringNum.charAt[i]);
+// // 	// 	console.log(digits);
+// // 	// }
+// }
+
+// // // const sumDigits = (num) => {
+// // // 	let digits = num.toString().split('');
+// // // 	console.log(digits);
+
+// // // 	for (let i = 0; i < )
+// // // }
+
+// console.log(sumDigits(42));
+
+// let count = 10;
+let sCount = count.toString();
