@@ -21,29 +21,41 @@ console.log(checkPalindrome("Borscht"));
 
 // Digit Sum
 
-// let num = 0;
+const sumDigits = (num) => {
+	let numStringArray = [];
+	let numIntArray = [];
+	let sum = 0;
 
-// const sumDigits = (num) => {
-// 	let stringNum = ""+num;
-// 	let digits = [];
-// 	console.log(stringNum);
-// // 	// for (let i = 0; i < stringNum.length; i += 1) {
-// // 	// 	digits.push(stringNum.charAt[i]);
-// // 	// 	console.log(digits);
-// // 	// }
-// }
+	let numToString = num.toString();
+	let digitsInNum = numToString.length;
 
-// // // const sumDigits = (num) => {
-// // // 	let digits = num.toString().split('');
-// // // 	console.log(digits);
+	// push num as string to array
 
-// // // 	for (let i = 0; i < )
-// // // }
+	for (let i = 0; i < digitsInNum; i++) {
+		numStringArray.push(numToString[i]);
+	}
+	//console.log(numStringArray);
 
-// console.log(sumDigits(42));
+	// push digits to array
 
-// // let count = 10;
-// let sCount = count.toString();
+		for (let i = 0; i < digitsInNum; i++) {
+			let numInt = 0;
+			numInt = parseInt(numStringArray[i], 10);
+			numIntArray.push(numInt);
+		}
+		//console.log(numIntArray);
+
+		// add together
+
+		for (let i = 0; i < digitsInNum; i++) {
+			sum += numIntArray[i];
+		}
+		return sum
+}
+
+
+console.log(sumDigits(42));
+
 
 
 // Pythagoras
