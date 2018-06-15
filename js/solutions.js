@@ -106,3 +106,20 @@ const printPrimes = (limit) => {
 printPrimes(5);
 
 // Is there a way to adjust the scope so that I could use i in my for loop on printPrimes? Right now, it gives an infinite loop.
+
+
+// Insert Dash
+
+const insertDash = (num2) => {
+	let numString = '';
+	let numArr = num2.toString().split('');
+	for (let i = 0; i < numArr.length; i++) {
+		if (numArr[i] % 2 === 1 && numArr[i+1] % 2 === 1) {
+			numString += numArr[i] + '-'
+		} else {
+			numString += numArr[i];
+		}
+	} return (numString);
+}
+
+console.log(insertDash(454793));
