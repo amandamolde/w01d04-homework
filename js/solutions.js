@@ -42,5 +42,16 @@ console.log(checkPalindrome("Borscht"));
 
 // console.log(sumDigits(42));
 
-// let count = 10;
-let sCount = count.toString();
+// // let count = 10;
+// let sCount = count.toString();
+
+
+// Pythagoras
+
+const calculateSide = (sideA, sideB) => {
+	let sideC = Math.hypot(sideA, sideB);
+	return sideC
+}
+
+console.log(calculateSide(8, 6));
+
